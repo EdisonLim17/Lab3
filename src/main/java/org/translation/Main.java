@@ -82,7 +82,9 @@ public class Main {
             countryNames.add(countryCodeConverter.fromCountryCode(country));
         }
         Collections.sort(countryNames);
-        System.out.println(countryNames);
+        for (String country: countryNames) {
+            System.out.println(country);
+        }
 
         System.out.println("select a country from above:");
 
@@ -103,7 +105,9 @@ public class Main {
             languageNames.add(languageCodeConverter.fromLanguageCode(language));
         }
         Collections.sort(languageNames);
-        System.out.println(languageNames);
+        for (String language: languageNames) {
+            System.out.println(language);
+        }
 
         System.out.println("select a language from above:");
 
